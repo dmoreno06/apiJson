@@ -1,0 +1,9 @@
+
+.peque{
+  
+  max-width: 300px;
+  height: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+}

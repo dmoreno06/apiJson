@@ -1,0 +1,59 @@
+
+    <table class="table table-striped table-responsive ">
+        <thead class="table-danger">
+          <tr>
+            <th class="th-lg">id</th>
+            <th class="th-lg">title</th>
+            <th class="th-lg">carpeta_fuente</th>
+            <th class="th-lg">fecha_nota</th>
+            <th class="th-lg">pagina_nota</th>
+            <th class="th-lg">numero_nota</th>
+            <th class="th-lg">uid</th>
+            <th class="th-lg">Arc_text</th>
+            <th class="th-lg">nota_txt</th>
+            <th class="th-lg">ruta_nota</th>
+            <th class="th-lg">altura_img_px</th>
+            
+            <!-- 
+              <th class="th-lg">ancho_img_px</th>
+              <th class="th-lg">horizontal_res_dp</th>
+            <th class="th-lg">vertical_res_dp</th>
+            <th class="th-lg">id_tipo_medio</th>
+            <th class="th-lg">altura_img_cm</th>
+            <th class="th-lg">ancho_img_cm</th>
+            <th class="th-lg">area_cm2</th>
+            <th class="th-lg">ancho_col_cm</th>
+            <th class="th-lg">columnas</th>
+            <th class="th-lg">_version_</th> -->
+           
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let registro of registros ; let i = index"  >
+                <th> {{registro.id}} </th>
+                <td >{{registro.title}}</td>
+                <td>{{registro.carpeta_fuente}}</td>
+                <td>{{registro.fecha_nota}}</td>
+                <td>{{registro.pagina_nota}}</td>
+                <td>{{registro.numero_nota}}</td>
+                <td>{{registro.uid}}</td>
+                <td>{{registro.Arc_text}}</td>
+                <td class="peque">{{registro.nota_txt }}</td>
+                <td>{{registro.ruta_nota}}</td>
+                <td>{{registro.altura_img_px}}</td>
+                
+            
+         <!--  
+           <td>{{registro.ancho_img_px}}</td> 
+            <td>{{registro.horizontal_res_dp}}</td>
+            <td>{{registro.vertical_res_dp}}</td>
+            <td>{{registro.id_tipo_medio}}</td>
+            <td>{{registro.altura_img_cm}}</td>
+            <td>{{registro.ancho_img_cm}}</td>
+            <td>{{registro.area_cm2}}</td>
+            <td>{{registro.ancho_col_cm}}</td>
+            <td>{{registro.columnas}}</td>
+            <td>{{registro._version_}}</td> -->
+          </tr>
+        </tbody>
+      </table>
